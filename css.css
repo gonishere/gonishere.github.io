@@ -1,0 +1,30 @@
+h1 {
+    font-size: 100px;
+    color: white;
+    background-color: green;
+
+}
+
+body {
+    text-align: center;
+}
+
+a {
+    color: black;
+    font-size: 30px;
+}
+
+.titulo {
+    font-size: 80px;
+    font-weight: 700;
+    color:green;
+}
+
+.listas ul,
+li {
+
+    margin-top: 50px;
+    list-style: none;
+
+
+}
