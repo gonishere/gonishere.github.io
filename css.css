@@ -17,7 +17,7 @@ body {
   justify-content: space-between;
   height: 63px;
   background: #171717;
-  position:static;
+  position: static;
   width: 100%;
   z-index: 100;
 }
@@ -40,7 +40,7 @@ body {
 
 .navbar li ul {
   display: none;
-  position:absolute;
+  position: absolute;
 }
 
 ul,
@@ -64,18 +64,21 @@ ol {
 }
 
 .navbar li a:hover {
-  background:rgb(134, 38, 54);
+  background: rgb(134, 38, 54);
 }
 
-.navbar li:hover > ul{
-  display:block;
+.navbar li:hover>ul {
+  display: block;
 }
-.navbar ul{
+
+.navbar ul {
   background: #171717;
 }
-.navbar > li{
-  float:left;
+
+.navbar>li {
+  float: left;
 }
+
 .header {
   display: flex;
   justify-content: center;
@@ -130,7 +133,7 @@ p {
 
 
 .content {
-  
+
   height: 50vh;
   display: flex;
   flex-direction: column;
