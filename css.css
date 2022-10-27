@@ -88,8 +88,8 @@ ol {
 }
 
 .header {
-  height: 60vh !important;
-  background: url(fondo.jpg) no-repeat center;
+  height: 80vh !important;
+  background: url(fondo.gif) no-repeat center;
   background-size: cover;
 }
 
@@ -99,7 +99,19 @@ ol {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
+  text-shadow: 1px 1px 2px black;
 }
+
+.content header h2,
+p {
+  margin-bottom: 40px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+}
+
 
 p {
   margin-bottom: 40px;
@@ -134,13 +146,24 @@ p {
 
 .content {
 
-  height: 50vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
 }
+
+
+.content2 p {
+
+  height: 20vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 
 .sau {
   padding: 30px;
