@@ -89,7 +89,19 @@ ol {
 
 .header {
   height: 60vh !important;
-  background: url(fondo.jpg) no-repeat center;
+  background: url(1.gif) no-repeat center;
+  background-size: cover;
+}
+
+.header2 {
+  height: 60vh !important;
+  background: url(2.gif) no-repeat center;
+  background-size: cover;
+}
+
+.header3 {
+  height: 60vh !important;
+  background: url(3.gif) no-repeat center;
   background-size: cover;
 }
 
