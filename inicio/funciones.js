@@ -60,7 +60,7 @@ var ultimos = new Array();
 var imgAni = 0;
 var imgAni2 = 0;
 var enemigosVivos = 50;
-var tiempoBala = true ;
+var tiempoBala = true;
 var teclaPulsada = null;
 var tecla = [];
 var balas_array = new Array();
@@ -99,21 +99,21 @@ function nave(x) {
 	this.h = 15;
 	this.dibuja = function (x) {
 		this.x = x;
-		if(imgAni2 < 5){
-			ctx.drawImage(imgNave,0   , 0   , 32  , 32  , this.x, this.y, 35  , 35);
+		if (imgAni2 < 5) {
+			ctx.drawImage(imgNave, 0, 0, 32, 32, this.x, this.y, 35, 35);
 			imgAni2 = imgAni2 + 1;
 			imgAni = imgAni + 1;
 			checarBalas();
 			//setInterval(checarBalas(),1000);
-		} else if(imgAni2 < 10) {
-			ctx.drawImage(imgNave,32  , 0   , 32  , 32  , this.x, this.y, 35  , 35);
+		} else if (imgAni2 < 10) {
+			ctx.drawImage(imgNave, 32, 0, 32, 32, this.x, this.y, 35, 35);
 			imgAni2 = imgAni2 + 1;
 			imgAni = imgAni + 1;
-		} else{
-			ctx.drawImage(imgNave,32  , 0   , 32  , 32  , this.x, this.y, 35  , 35);
+		} else {
+			ctx.drawImage(imgNave, 32, 0, 32, 32, this.x, this.y, 35, 35);
 			imgAni2 = 0;
 		}
-		
+
 	};
 }
 function Enemigo(x, y) {
@@ -147,13 +147,13 @@ function Enemigo(x, y) {
 		}
 		if (this.vive) {
 			if (imgAni < 4) {
-				ctx.drawImage(imgOvni, 0   , 0   , 32  , 32  , this.x, this.y, 35  , 35);
+				ctx.drawImage(imgOvni, 0, 0, 32, 32, this.x, this.y, 35, 35);
 				//           (imgFile, xini, yini, wimg, himg, xpos  , ypos  , wrez, hrez)
-			} else if(imgAni < 8) {
+			} else if (imgAni < 8) {
 				ctx.drawImage(imgOvni, 32, 0, 32, 32, this.x, this.y, 35, 35);
-			} else if(imgAni < 12) {
+			} else if (imgAni < 12) {
 				ctx.drawImage(imgOvni, 64, 0, 32, 32, this.x, this.y, 35, 35);
-			} else if(imgAni > 11) {
+			} else if (imgAni > 11) {
 				ctx.drawImage(imgOvni, 0, 0, 32, 32, this.x, this.y, 35, 35);
 				imgAni = 0;
 			}
@@ -219,9 +219,9 @@ function gameOver() {
 	balas_array = [];
 	ovnis_array = [];
 	balasEnemigas_array = [];
-	if( enemigosVivos == 0 ){
+	if (enemigosVivos == 0) {
 		mensaje("GANASTE");
-	}else{
+	} else {
 		mensaje("GAME OVER");
 	}
 	endGame = true;
@@ -243,8 +243,8 @@ function municiones() {
 	ctx.fillText("Municion: " + municion, 10, 40);
 	ctx.restore();
 }
-function verifica(boton=false, codigo=0) {
-	if(boton){
+function verifica(boton = false, codigo = 0) {
+	if (boton) {
 		teclaPulsada = codigo;
 		tecla[codigo] = true;
 	}
@@ -255,32 +255,32 @@ function verifica(boton=false, codigo=0) {
 	if (x < 0) x = 0;
 	//Disparo
 	if (tecla[teclaEspacio]) {
-		if (tiempoBala == true && municion !=0 ){
+		if (tiempoBala == true && municion != 0) {
 			tiempoBala = false;
 			balas_array.push(new Bala(nave.x + 12, nave.y - 3, 5));
-			(municion >0)?municion = municion - 1 : false;
+			(municion > 0) ? municion = municion - 1 : false;
 			tecla[teclaEspacio] = false;
 			disparaEnemigo();
-			setTimeout(function(){tiempoBala = true;}, 300);
+			setTimeout(function () { tiempoBala = true; }, 300);
 		}
 	}
-	if(boton){
+	if (boton) {
 		setTimeout(() => {
 			tecla[codigo] = false;
 		}, 100);
 	}
 }
-function checarBalas(){
+function checarBalas() {
 	var balasArrayVal = 0;
-	for(let i = 0 ; i < balas_array.length; i++){
-		if(balas_array[i] != null){
+	for (let i = 0; i < balas_array.length; i++) {
+		if (balas_array[i] != null) {
 			balasArrayVal = 1;
 		}
 	}
-	if(municion == 0 && balas_array.length == 100 && balasArrayVal == 0 && enemigosVivos > 0){
+	if (municion == 0 && balas_array.length == 100 && balasArrayVal == 0 && enemigosVivos > 0) {
 		tecla[teclaEspacio] = false;
-			alert("Sin municion");
-			gameOver();
+		alert("Sin municion");
+		gameOver();
 	}
 }
 function pinta() {
@@ -322,16 +322,16 @@ function disparaEnemigo() {
 		}
 		if (ultimos.length >= 10) break;
 	}
-	Array.prototype.clean = function(deleteValue) { 
+	Array.prototype.clean = function (deleteValue) {
 		for (var i = 0; i < this.length; i++) {
-				if (this[i] == deleteValue) { 
-					this.splice(i, 1); i--; 
-				} 
-			} return this; 
-		}; 
+			if (this[i] == deleteValue) {
+				this.splice(i, 1); i--;
+			}
+		} return this;
+	};
 	ovnis_array.clean(undefined);
 	d = ultimos[Math.floor(Math.random() * ovnis_array.length)];
-	if(ovnis_array[d] == null || d == null){
+	if (ovnis_array[d] == null || d == null) {
 		ovnis_array.clean(undefined);
 		d = Math.floor(Math.random() * ovnis_array.length);
 	}

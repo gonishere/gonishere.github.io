@@ -25,7 +25,7 @@ body {
 
 .logo {
   margin-left: 30px;
-  
+
 }
 
 .logo a {
@@ -179,7 +179,8 @@ p {
   background: black;
   box-shadow: 10px 10px 10px #888888;
 }
-.botonesMover{
+
+.botonesMover {
   color: #e8e8e8;
   background-color: #006df1;
   border-radius: 10px;
@@ -189,7 +190,8 @@ p {
   font-size: 14px;
   font-weight: bold;
 }
-.botonDisparo{
+
+.botonDisparo {
   color: #e8e8e8;
   background-color: #ae0000;
   border-radius: 10px;
