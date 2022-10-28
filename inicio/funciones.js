@@ -7,7 +7,7 @@ window.onload = function () {
 		ctx = canvas.getContext("2d");
 		if (ctx) {
 			x = canvas.width / 2;
-			mensaje("POKE ALIENS");
+			mensaje("ק๏кє คɭเєภร");
 			imgNave = new Image();
 			imgOvni = new Image();
 			imgOvni.src = "ovni.png";
@@ -220,9 +220,9 @@ function gameOver() {
 	ovnis_array = [];
 	balasEnemigas_array = [];
 	if (enemigosVivos == 0) {
-		mensaje("GANASTE");
+		mensaje("EᖇE Eᒪ ᗰEᒍOᕼ");
 	} else {
-		mensaje("LOOSER :)");
+		mensaje("ᒪOOᔕEᖇ! ᒍᗩᒍᗩ");
 	}
 	endGame = true;
 	clearTimeout(disparoEnemigo);
@@ -232,7 +232,7 @@ function score() {
 	ctx.fillStyle = "white";
 	ctx.clearRect(0, 0, canvas.width, 20);
 	ctx.font = "bold 12px Courier";
-	ctx.fillText("SCORE: " + puntos, 10, 20);
+	ctx.fillText("Tu puntuasión: " + puntos, 10, 20);
 	ctx.restore();
 }
 function municiones() {
@@ -240,7 +240,7 @@ function municiones() {
 	ctx.fillStyle = "white";
 	ctx.clearRect(0, 20, canvas.width, 20);
 	ctx.font = "bold 12px Courier";
-	ctx.fillText("Municion: " + municion, 10, 40);
+	ctx.fillText("Munisión: " + municion, 10, 40);
 	ctx.restore();
 }
 function verifica(boton = false, codigo = 0) {

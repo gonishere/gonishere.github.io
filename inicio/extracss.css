@@ -204,26 +204,10 @@ p {
 
 h1{
   margin-top:20px;
+
+  font-size: 30px;
+  font-weight:900;
+  text-align: center;
+  color: black;
 }
 
-
- 
-.juego-boton{
-
-  padding: 1rem 1rem;
-  background:red ;
-  color: white;
-  cursor: pointer;
-  justify-content: center;
-  font-weight: bold;
-  transition:color ease-out 0.3s;
- 
-}
-
-.juego-boton:hover{
-
-  background:white ;
-  color: red;
-  border: 1px solid red;
- 
-}
