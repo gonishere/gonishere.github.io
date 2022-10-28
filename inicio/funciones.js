@@ -79,14 +79,14 @@ function Bala(x, y, w) {
 	this.w = w;
 	this.dibuja = function () {
 		ctx.save();
-		ctx.fillStyle = "blue";
+		ctx.fillStyle = "red";
 		ctx.fillRect(this.x, this.y, this.w, this.w);
 		this.y = this.y - 6;
 		ctx.restore();
 	};
 	this.dispara = function () {
 		ctx.save();
-		ctx.fillStyle = "red";
+		ctx.fillStyle = "white";
 		ctx.fillRect(this.x, this.y, this.w, this.w);
 		this.y = this.y + 4;
 		ctx.restore();
