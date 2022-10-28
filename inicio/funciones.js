@@ -7,7 +7,7 @@ window.onload = function () {
 		ctx = canvas.getContext("2d");
 		if (ctx) {
 			x = canvas.width / 2;
-			mensaje("ק๏кє คɭเєภร");
+			mensaje("ק๏кє คɭเєภร	");
 			imgNave = new Image();
 			imgOvni = new Image();
 			imgOvni.src = "ovni.png";
@@ -240,7 +240,7 @@ function municiones() {
 	ctx.fillStyle = "white";
 	ctx.clearRect(0, 20, canvas.width, 20);
 	ctx.font = "bold 12px Courier";
-	ctx.fillText("Munisión: " + municion, 10, 40);
+	ctx.fillText("Pokeballs: " + municion, 10, 40);
 	ctx.restore();
 }
 function verifica(boton = false, codigo = 0) {
