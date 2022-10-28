@@ -135,11 +135,8 @@ p {
 
 
 
-section {
-  background-color: beige;
-}
-
 img {
+  margin-top:10px;
   width: 23%;
   height: auto;
   filter: saturate(0);
@@ -151,13 +148,19 @@ a:hover img {
 }
 
 h1 {
-  margin-top: 10px;
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight:900;
   text-align: center;
   color: black;
 
 }
 
-
+h2{
+  margin-top:50px;
+  font-size: 20px;
+  font-weight:550;
+}
 .blur {
   filter: blur(4px);
 }
