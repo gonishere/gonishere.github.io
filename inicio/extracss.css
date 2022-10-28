@@ -201,3 +201,29 @@ p {
   font-size: 14px;
   font-weight: bold;
 }
+
+h1{
+  margin-top:20px;
+}
+
+
+ 
+.juego-boton{
+
+  padding: 1rem 1rem;
+  background:red ;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  font-weight: bold;
+  transition:color ease-out 0.3s;
+ 
+}
+
+.juego-boton:hover{
+
+  background:white ;
+  color: red;
+  border: 1px solid red;
+ 
+}

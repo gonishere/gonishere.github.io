@@ -7,7 +7,7 @@ window.onload = function () {
 		ctx = canvas.getContext("2d");
 		if (ctx) {
 			x = canvas.width / 2;
-			mensaje("INVASORES");
+			mensaje("POKE ALIENS");
 			imgNave = new Image();
 			imgOvni = new Image();
 			imgOvni.src = "ovni.png";
@@ -222,7 +222,7 @@ function gameOver() {
 	if (enemigosVivos == 0) {
 		mensaje("GANASTE");
 	} else {
-		mensaje("GAME OVER");
+		mensaje("LOOSER :)");
 	}
 	endGame = true;
 	clearTimeout(disparoEnemigo);
@@ -339,3 +339,4 @@ function disparaEnemigo() {
 	clearTimeout(disparoEnemigo);
 	disparoEnemigo = setTimeout(disparaEnemigo, tiempoDisparo);
 }
+
