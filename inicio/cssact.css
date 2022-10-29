@@ -121,7 +121,7 @@ ol {
 
 
 .slidein,btn {
-  display:grid;
+  display:block;
 
   color: #fff;
   text-decoration: none;
