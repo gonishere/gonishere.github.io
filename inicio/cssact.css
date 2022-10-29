@@ -131,7 +131,7 @@ ol {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: slidein;
   animation-iteration-count:initial;
   animation-direction:normal ;
