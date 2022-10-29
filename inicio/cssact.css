@@ -92,7 +92,11 @@ ol {
   height: 60vh !important;
   background: url(1.gif) no-repeat center;
   background-size: cover;
+
+
+
 }
+
 
 .header2 {
   height: 60vh !important;
@@ -112,26 +116,32 @@ ol {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
+
 }
 
-p {
-  margin-bottom: 40px;
-  font-size: 18px;
-  color: #fff;
-  padding: 0 100px;
-}
 
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 40px;
-  border: 2px solid red;
+.slidein,btn {
+  display:grid;
+
   color: #fff;
   text-decoration: none;
-  background: red;
+  background:  rgb(134, 38, 54);
+  text-decoration:none;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count:initial;
+  animation-direction:normal ;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  
 }
 
-.btn:hover {
+
+
+.btn:not(:hover) {
   background: none;
 
 }
@@ -236,4 +246,20 @@ p {
 
 
 
+}
+
+
+.slidein {
+
+}
+
+@keyframes slidein {
+  from {
+    margin-bottom:350%;
+  }
+
+  to {
+    margin-bottom:0%;
+
+ }
 }
