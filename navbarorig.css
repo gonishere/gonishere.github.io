@@ -69,11 +69,11 @@ ol {
 }
 
 .navbar li a:hover {
-  color: rgb(134, 38, 54);
+  color: #ecef6e;
 }
 
 .logo a:hover {
-  color: rgb(134, 38, 54);
+  color: #ecef6e;
 }
 
 .navbar li:hover>ul {

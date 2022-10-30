@@ -1,6 +1,5 @@
-body {
-  cursor: url(cursor2.png),auto;
-}
+body{ cursor:crosshair; }
+
 .check{
     position:relative;
     margin-right:500px;
