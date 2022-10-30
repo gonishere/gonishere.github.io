@@ -1,8 +1,15 @@
+body {
+  cursor: url(cursor2.png),auto;
+}
 .check{
     position:relative;
     margin-right:500px;
     margin-bottom:10px;
     width:50px;
+  }
+
+  .check:hover {
+    cursor:pointer;
   }
    
   .check:before{
@@ -36,3 +43,4 @@
     background : #0fffe4;
   }
    
+
