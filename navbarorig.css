@@ -72,6 +72,10 @@ ol {
   color: rgb(134, 38, 54);
 }
 
+.logo a:hover {
+  color: rgb(134, 38, 54);
+}
+
 .navbar li:hover>ul {
   display: block;
 }

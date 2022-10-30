@@ -69,6 +69,10 @@ ol {
   color: #0fffe4;
 }
 
+.logo a:hover {
+  color: #0fffe4;
+}
+
 .navbar li:hover>ul {
   display: block;
 }
