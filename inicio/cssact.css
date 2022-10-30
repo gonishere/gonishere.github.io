@@ -35,7 +35,7 @@ btn {
   animation-name: slidein;
   animation-iteration-count: initial;
   animation-direction: normal;
-
+  text-shadow: 5px 5px 5px black;
 
 }
 
