@@ -10,6 +10,27 @@
     <link rel="stylesheet" href="../navbarorig.css">
     <link rel="stylesheet" href="../boton.css">
 
+    <style type="text/css">
+        #pagina {
+            width: 500px;
+            background-color: darkgray;
+            margin-left: auto;
+            margin-right: auto;
+        }    
+        #cajaFotos {
+            height: 300px;
+            background-color: lightgray;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            overflow: auto;
+        }
+        #cajaFotos img {
+            max-height: 100px;
+            max-width: 100px;
+            margin: 5px;
+        }
+    </style>
     <title>Galería con Lightbox</title>
 </head>
 
@@ -45,60 +66,63 @@
 
 
     <div class="container">
+        <div id="pagina">
+            <div id="cajaFotos">
+ 
         <div>
             <a href="imagenes/1.jpg" data-lightbox="ejemplo" data-title="QUE PAAAAAAAASA!">
                 <img src="imagenes/1.jpg" alt="Xocas 1">
             </a>
         </div>
-
+ 
         <div>
             <a href="imagenes/2.jpg" data-lightbox="ejemplo" data-title="PERO QUE DICES!!">
                 <img src="imagenes/2.jpg" alt="Xocas 1">
             </a>
         </div>
-
+ 
         <div>
             <a href="imagenes/3.jpg" data-lightbox="ejemplo"
                 data-title="EH TU!!">
                 <img src="imagenes/3.jpg" alt="Xocas 3">
             </a>
         </div>
-
+ 
         <div>
             <a href="imagenes/4.jpg" data-lightbox="ejemplo"
                 data-title="Ay Marge, no queda cerveza en la nevera :(">
                 <img src="imagenes/4.jpg" alt="Homer">
             </a>
         </div>
-
+ 
         <div>
             <a href="imagenes/5.jpg" data-lightbox="ejemplo"
                 data-title="SOY BART SIMSPON">
                 <img src="imagenes/5.jpg" alt="Bart">
             </a>
         </div>
-
+ 
         <div>
             <a href="imagenes/6.jpg" data-lightbox="ejemplo"
                 data-title="Que esas mirando tu">
                 <img src="imagenes/6.jpg" alt="Maggie">  
             </a>
         </div>
-
+ 
         <div>
             <a href="imagenes/7.gif" data-lightbox="ejemplo"
                 data-title="Velocidad a tope!!">
-                <img src="imagenes/7.gif" alt="Rata"> 
+                <img src="imagenes/7.gif" alt="Rata">
             </a>
         </div>
-
+ 
         <div>
             <a href="imagenes/8.png" data-lightbox="ejemplo"
                 data-title="Hola guapísimo">
                 <img src="imagenes/8.png" alt="Ratatui">
             </a>
         </div>
-
+ 
         <div>
             <a href="imagenes/9.png" data-lightbox="ejemplo"
                 data-title="A COMBATIRRRR11">
@@ -106,9 +130,9 @@
             </a>
         </div>
     </div>
+</div>
+</div>
 
-    </div>
-</body>
 
 
 <script src="lightbox2/js/lightbox-plus-jquery.min.js"></script>
