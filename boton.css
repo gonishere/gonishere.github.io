@@ -1,5 +1,6 @@
 body{ cursor:crosshair; }
 
+ /* BOTÓN */ 
 .check{
     position:relative;
     margin-right:500px;

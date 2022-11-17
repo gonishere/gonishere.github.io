@@ -1,10 +1,8 @@
+/* HEADER */
 .header {
   height: 60vh !important;
   background: url(1.gif) no-repeat center;
   background-size: cover;
-
-
-
 }
 
 
@@ -36,7 +34,6 @@ btn {
   animation-iteration-count: initial;
   animation-direction: normal;
   text-shadow: 5px 5px 5px black;
-
 }
 
 
