@@ -1,0 +1,121 @@
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+#cajaSuperior {
+    width: 100vw;
+    /* que ocupe el ancho de la pantalla */
+    height: 100vh;
+    /* para que sea cuadrada (igual a width) */
+    background-image: url(imgs/fondo.jpg);
+    position: relative;
+    top:300%;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#cajaCentral {
+    height: 100vh;
+    padding: 15vw;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 104px;
+    font-weight: 100;
+    padding-left: 200px;
+}
+
+h2 {
+    font-size: 18px;
+    color: darkgray;
+}
+
+p {
+    padding-top: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 100;
+}
+
+p2 {
+    padding-top: 200px;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 100;
+}
+
+
+#cajaInferior {
+    margin-top: 700px;
+}
+
+
+#cajaInferior li {
+    color: black;
+    font-size: 20px;
+    list-style:none;
+}
+
+
+#otracaja ul {
+    margin-top: 400px;
+    height: 100vh;
+    background-color: black;
+    font-size: 30px;
+    list-style: none;
+    font-size: 50px;
+    font-weight: 100;
+    padding: 15vw;
+    color: white;
+    text-decoration: none;
+}
+
+.incorrecto {
+    text-decoration: black;
+}
+
+.incorrecto:hover {
+    text-decoration: line-through;
+    color: red;
+}
+
+li {
+    padding-left: 200px;
+}
+
+#texto {
+    padding-left: 200px;
+}
+
+a:link {
+    color: red;
+
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+
+.nav, a{
+    margin-left:15px;
+}

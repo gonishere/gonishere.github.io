@@ -1,0 +1,84 @@
+<!-- INICIO-->
+header .row {    
+    align-content: center; 
+}
+
+.contenedorAlineamientoVertical {
+    display: flex;
+    align-items: center; 
+    height: 200px;
+}
+
+nav li {
+    list-style: none;
+    font-size:14px;
+}
+
+a {
+    color: green;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(130, 204, 206);
+}
+
+#botonesCentrales {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#botonesCentrales * {
+    padding: 20px;
+}
+
+<!-- IMÁGENES-->
+div, .card{
+    margin-top:100px;
+}
+
+
+
+#videoLibrary {
+    text-align: center;
+    margin-top: 50px;
+
+
+}
+
+
+
+.videobotón {
+    color:white;
+    background-color: rgb(97, 97, 97);
+    margin: 5px;
+    padding:10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    line-height:32px;
+  
+    
+}
+
+
+.botonmac{
+  
+  margin: 5px;
+  padding:10px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  line-height:32px;
+  float:left;
+
+}
+
+
+
+
+<!-- FOOTER-->
+footer {
+    height: 300px;
+}
