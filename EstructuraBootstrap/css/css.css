@@ -1,0 +1,286 @@
+
+
+.azul{
+  background-color:blue;
+  height:100px;
+}
+
+
+.verde{
+  background-color:green;
+  height:900px;
+}
+
+.amarillo{
+  background-color:yellow;
+  height:600px;
+}
+
+
+.rosa{
+  background-color:pink;
+  height:400px;
+}
+
+.gris{
+  background-color:gray;
+  height:700px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+  scroll-behavior:smooth 4;
+}
+
+
+/*CABECERA*/
+.escucha {
+  margin-top:0px;
+  display: block;
+  padding-left: 1150px;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+
+}
+mark {
+  background-color: #ffffff;
+  color: #74c7ff;
+  margin-top:400px;
+  font-size:60px;
+  
+}
+
+.negro{
+  background-color:green;
+  height:1000px;
+}
+
+.navbar{
+  background-color:blue;
+}
+
+.imagenportada {
+  background-color:red;
+  background-position: center;
+  background-size: cover;
+  margin-top: -600px;
+  background-repeat: no-repeat;
+  height: 130vh;
+  display: block;
+}
+
+
+
+h2,
+.texto {
+  text-align: center;
+ margin-top:260px;
+ font-family: 'Changa One', cursive;
+  margin-left: 800px;
+  font-size: 60px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+
+
+/* seccion CANCIONES */
+/* *********************/
+.carousel-fade {
+  .carousel-item {
+    opacity: 0;
+    transition-duration: .6s;
+    transition-property: opacity;
+  }
+
+  .carousel-item.active,
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+  }
+
+  .active.carousel-item-left,
+  .active.carousel-item-right {
+    opacity: 0;
+  }
+
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active,
+  .active.carousel-item-left,
+  .active.carousel-item-prev {
+    transform: translateX(0);
+
+    @supports (transform-style: preserve-3d) {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.musicagif {
+  background-image: url("../imgs/bannerbio.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  display: block;
+}
+
+
+.card {
+  box-shadow: 10px 20px 20px 10 rgba(20, 20, 20, 0.3);
+  padding-bottom: 70px;
+}
+
+.todamusica {
+  margin-left: 770px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+}
+
+.card-title {
+  color: black;
+  margin-top: 0px;
+
+}
+
+
+
+.cartasdemusica{
+margin-right:-600px;
+
+
+}
+
+#musica{
+  width:100%;
+
+}
+
+.btn-group {
+  margin-bottom: -100px;
+}
+
+.btn {
+  color: #fd46a5;
+
+
+
+}
+
+.btn:hover {
+  background-color: #fd46a5;
+}
+
+
+.carousel-control-prev {
+
+  color:black;
+}
+
+
+
+.carousel-control-next {
+
+  color:black;
+}
+
+
+.carousel-control-prev:hover {
+color:#fd46a5;
+}
+
+.carousel-control-next:hover {
+  color:#fd46a5;
+  }
+
+
+
+
+.carousel-control-prev {
+
+  color:black;
+}
+
+
+
+.carousel-control-next {
+
+  color:black;
+}
+
+
+.carousel-control-prev:hover {
+color:#fd46a5;
+}
+
+.carousel-control-next:hover {
+  color:#fd46a5;
+  }
+
+
+
+
+
+
+  
+/* TAMAÑOS BOOSTRAP */
+/* *********************/
+@media screen and (max-width: 800px){
+  .colum1{
+      max-width: 100%;
+      margin-right:60px;
+      
+  }
+  
+  .colum2,
+  .colum3{
+    max-width: 100%;
+  }
+
+}
+
+
+@media screen and (max-width: 2000px){
+    
+  .imagenportada {
+    margin-top: -100px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
