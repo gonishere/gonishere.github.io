@@ -1,0 +1,65 @@
+.titulo {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+
+ul {
+    text-align: center;
+    padding-top: 100px;
+}
+
+ul li {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.titulo:hover {
+    text-decoration: none;
+    color: red;
+
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url("../images/1.gif");
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+
+}
+
+
+.rojo{
+    background-color: red;
+
+}
+
+.azul{
+    background-color: blue;
+}
+
+.amarillo{
+    background-color: yellow;
+}
+
+.verde{
+    background-color: green;
+}
+
+.rosa{
+    background-color: pink;
+}
